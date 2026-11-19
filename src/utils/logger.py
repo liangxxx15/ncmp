@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class Logger:
-    def __init__(self, log_level: Optional[int] = logging.DEBUG):
+    def __init__(self, log_level: Optional[int] = logging.INFO):
         # 配置日志格式
         logging.basicConfig(
             level=log_level,
@@ -28,4 +28,4 @@ class Logger:
         if is_error:
             self.error(message)
         else:
-            self.info(message) 
+            self.info(message)
